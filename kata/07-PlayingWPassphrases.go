@@ -10,7 +10,6 @@ var abecedary []string = []string{"A", "B", "C", "D", "E", "F", "G", "H", "I", "
 
 func PlayPass(s string, n int) string {
 	fmt.Println(s)
-	// 1 shift sentence by a give number
 	strArray := strings.Split(s, "")
 	fmt.Println(strArray, len(strArray))
 	var newSentence string
@@ -28,16 +27,9 @@ func PlayPass(s string, n int) string {
 			if abc == upperLetter {
 				isLetter = true
 				newSentence += abecedary[shift]
-				/* if j == len(abecedary)-1 {
-					newSentence += abecedary[(len(abecedary)-j)+n]
-				} else {
-					fmt.Println(j, len(abecedary))
-					newSentence += abecedary[j]
-
-				} */
 			}
 		}
-		// fmt.Println(isLetter, i, letter)
+
 		if !isLetter {
 			// si es un numero
 			if number, err := strconv.Atoi(letter); err == nil {
