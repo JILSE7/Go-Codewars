@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	kata "github/JILSE7/codewars/kata"
 )
 
@@ -24,6 +23,9 @@ func main() {
 	   	fmt.Println(spinWorld) */
 
 	//? RGB To Hex Conversion (255,255,255) -> #FFFFFF
-	myHex := kata.RGB(-20, 275, 125)
-	fmt.Printf("My ex %v", myHex)
+	/* myHex := kata.RGB(-20, 275, 125)
+	fmt.Printf("My ex %v", myHex) */
+
+	//? Playing with passphrases
+	kata.PlayPass("3SI#!NLEQCB7   BEGXWIOKFD1R5H9VYC5N9 Y 7!A8ZP#N", 5)
 }
