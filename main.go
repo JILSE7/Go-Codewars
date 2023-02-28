@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	kata "github/JILSE7/codewars/kata"
 )
 
@@ -27,5 +28,10 @@ func main() {
 	fmt.Printf("My ex %v", myHex) */
 
 	//? Playing with passphrases
-	kata.PlayPass("3SI#!NLEQCB7   BEGXWIOKFD1R5H9VYC5N9 Y 7!A8ZP#N", 5)
+	// kata.PlayPass("3SI#!NLEQCB7   BEGXWIOKFD1R5H9VYC5N9 Y 7!A8ZP#N", 5)
+
+	//? Is Prime
+	isPrime := kata.IsPrime(3)
+
+	fmt.Println(isPrime)
 }
